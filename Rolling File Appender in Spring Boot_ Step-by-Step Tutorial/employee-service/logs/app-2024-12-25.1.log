@@ -1,0 +1,7 @@
+2024-12-25 18:30 {INFO } {http-nio-8080-exec-8} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - accept : [*/*]
+2024-12-25 18:30 {INFO } {http-nio-8080-exec-8} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - postman-token : [bf1d758c-761b-430f-b5c2-6a69b5caa970]
+2024-12-25 18:30 {INFO } {http-nio-8080-exec-8} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - host : [localhost:8080]
+2024-12-25 18:30 {INFO } {http-nio-8080-exec-8} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - accept-encoding : [gzip, deflate, br]
+2024-12-25 18:30 {INFO } {http-nio-8080-exec-8} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - connection : [keep-alive]
+2024-12-25 18:30 {INFO } {http-nio-8080-exec-9} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - header1 : header value demo 
+2024-12-25 18:30 {WARN } {http-nio-8080-exec-9} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - warn log
