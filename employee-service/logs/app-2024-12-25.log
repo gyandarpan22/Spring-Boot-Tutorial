@@ -1,7 +1,0 @@
-2024-12-25 18:33 {INFO } {main} com.gyan.darpan.employee.EmployeeServiceApplication.logStartupProfileInfo() {} - No active profile set, falling back to 1 default profile: "default"
-2024-12-25 18:33 {INFO } {main} org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize() {} - Tomcat initialized with port 8080 (http)
-2024-12-25 18:33 {INFO } {main} org.apache.coyote.http11.Http11NioProtocol.log() {} - Initializing ProtocolHandler ["http-nio-8080"]
-2024-12-25 18:33 {INFO } {main} org.apache.catalina.core.StandardService.log() {} - Starting service [Tomcat]
-2024-12-25 18:33 {INFO } {main} org.apache.catalina.core.StandardEngine.log() {} - Starting Servlet engine: [Apache Tomcat/10.1.24]
-2024-12-25 18:33 {INFO } {main} org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/employee-service].log() {} - Initializing Spring embedded WebApplicationContext
-2024-12-25 18:33 {INFO } {main} org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext() {} - Root WebApplicationContext: initialization completed in 276 ms

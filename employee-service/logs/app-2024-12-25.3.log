@@ -1,7 +1,0 @@
-2024-12-25 18:30 {INFO } {http-nio-8080-exec-9} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - connection : [keep-alive]
-2024-12-25 18:31 {INFO } {main} com.gyan.darpan.employee.EmployeeServiceApplication.logStarting() {} - Starting EmployeeServiceApplication using Java 21.0.3 with PID 6573 (/Users/user1/Project1/employee-service/target/classes started by user1 in /Users/user1/Project1/employee-service)
-2024-12-25 18:31 {INFO } {main} com.gyan.darpan.employee.EmployeeServiceApplication.logStartupProfileInfo() {} - No active profile set, falling back to 1 default profile: "default"
-2024-12-25 18:31 {INFO } {main} org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize() {} - Tomcat initialized with port 8080 (http)
-2024-12-25 18:31 {INFO } {main} org.apache.coyote.http11.Http11NioProtocol.log() {} - Initializing ProtocolHandler ["http-nio-8080"]
-2024-12-25 18:31 {INFO } {main} org.apache.catalina.core.StandardService.log() {} - Starting service [Tomcat]
-2024-12-25 18:31 {INFO } {main} org.apache.catalina.core.StandardEngine.log() {} - Starting Servlet engine: [Apache Tomcat/10.1.24]

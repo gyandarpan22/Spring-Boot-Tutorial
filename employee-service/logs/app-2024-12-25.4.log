@@ -1,6 +1,0 @@
-2024-12-25 18:31 {INFO } {main} org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/employee-service].log() {} - Initializing Spring embedded WebApplicationContext
-2024-12-25 18:31 {INFO } {main} org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext() {} - Root WebApplicationContext: initialization completed in 277 ms
-2024-12-25 18:31 {INFO } {main} org.apache.coyote.http11.Http11NioProtocol.log() {} - Starting ProtocolHandler ["http-nio-8080"]
-2024-12-25 18:31 {INFO } {main} org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start() {} - Tomcat started on port 8080 (http) with context path '/employee-service'
-2024-12-25 18:31 {INFO } {main} com.gyan.darpan.employee.EmployeeServiceApplication.logStarted() {} - Started EmployeeServiceApplication in 0.509 seconds (process running for 5.894)
-2024-12-25 18:31 {INFO } {http-nio-8080-exec-1} org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/employee-service].log() {} - Initializing Spring DispatcherServlet 'dispatcherServlet'

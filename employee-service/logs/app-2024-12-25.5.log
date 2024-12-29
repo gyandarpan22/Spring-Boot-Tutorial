@@ -1,7 +1,0 @@
-2024-12-25 18:31 {INFO } {http-nio-8080-exec-1} org.springframework.web.servlet.DispatcherServlet.initServletBean() {} - Initializing Servlet 'dispatcherServlet'
-2024-12-25 18:31 {INFO } {http-nio-8080-exec-1} org.springframework.web.servlet.DispatcherServlet.initServletBean() {} - Completed initialization in 1 ms
-2024-12-25 18:31 {INFO } {http-nio-8080-exec-1} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - header1 : header value demo 
-2024-12-25 18:31 {WARN } {http-nio-8080-exec-1} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - warn log
-2024-12-25 18:31 {ERROR} {http-nio-8080-exec-1} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - error log
-2024-12-25 18:31 {INFO } {http-nio-8080-exec-1} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - header1 : [header value demo]
-2024-12-25 18:31 {INFO } {http-nio-8080-exec-1} com.gyan.darpan.employee.controller.DemoController.headersDemo1() {} - user-agent : [PostmanRuntime/7.43.0]
