@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: employee-service
+
+server:
+  servlet:
+    context-path: /employee-service
+  port: 8080
+
+employee:
+  page:
+    size: 2
+
+custom:
+  property:
+    int: 24
+    string: Welcome to Gyan Darpan
+    boolean: true
+    fruits: apple,banana,orange
+    fruits1: apple;banana;orange
+
+user:
+  user-name: Gyan Darpan
+  age: 1
+  active: true
+  roles:
+    - ADMIN
+    - USER
+    - MODERATOR
+
+
