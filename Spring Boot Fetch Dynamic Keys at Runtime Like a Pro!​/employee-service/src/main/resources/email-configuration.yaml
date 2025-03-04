@@ -1,0 +1,11 @@
+email:
+  gmail:
+    host: "smtp.gmail.com"
+    port: 587
+    username: "demo"
+    password: "password1"
+  outlook:
+    host: "smtp.outlook.com"
+    port: 587
+    username: "outlookUser"
+    password: "password2"
