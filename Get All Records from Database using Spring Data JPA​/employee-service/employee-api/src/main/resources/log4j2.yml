@@ -1,0 +1,58 @@
+Configuration:
+
+  properties:
+    Property:
+      - name: log-file-path
+        value: "/Users/user1/Downloads/Demo"
+      - name: log-file-name
+        value: "employee-service"
+      - name: max-backup-files
+        value: 2
+
+  appenders:
+    Console:
+      - name: consoleAppender
+        target: SYSTEM_OUT
+        PatternLayout:
+          pattern: "%d{yyyy-MM-dd HH:mm:ss} {%-5level} {%t} %c.%M() %X - %msg%n"
+      - name: consoleAppenderWithoutSecond
+        target: SYSTEM_OUT
+        PatternLayout:
+          pattern: "%d{yyyy-MM-dd HH:mm} {%-5level} {%t} %c.%M() %X - %msg%n"
+      - name: consoleJsonTemplateLayoutAppender
+        JsonTemplateLayout:
+          eventTemplateUri: "classpath:EmployeeServiceJsonLayout.json"
+
+    RollingFile:
+      - name: rollingFileAppender
+        fileName: "${log-file-path}/${log-file-name}.log"
+        filePattern: "${log-file-path}/${log-file-name}-%d{yyyy-MM-dd HH:mm}-%i.log"
+        PatternLayout:
+          pattern: "%d{yyyy-MM-dd HH:mm} {%-5level} {%t} %c.%M() %X - %msg%n"
+        Policies:
+          SizeBasedTriggeringPolicy:
+            size: "1KB"
+        DefaultRolloverStrategy:
+          max: "${max-backup-files}"
+
+
+  loggers:
+    Root:
+      level: ${env:LOG_LEVEL:-INFO}
+      AppenderRef:
+        - ref: ${env:LOGGER_APPENDER:-consoleAppender}
+
+
+    logger:
+      - name: com.gyan.darpan.employee
+        level: ${env:LOG_LEVEL:-INFO}
+        additivity: false
+        AppenderRef:
+          - ref: ${env:LOGGER_APPENDER:-consoleAppender}
+
+      - name: org.hibernate.SQL
+        level: DEBUG
+        additivity: false
+        AppenderRef:
+          - ref: ${env:LOGGER_APPENDER:-consoleAppender}
+
