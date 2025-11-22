@@ -1,0 +1,33 @@
+Configuration:
+  appenders:
+    Console:
+      - name: consoleAppender
+        target: SYSTEM_OUT
+        PatternLayout:
+          pattern: "%d{yyyy-MM-dd HH:mm:ss} {%-5level} {%t} %c.%M() %X - %msg%n"
+      - name: consoleAppenderWithoutSecond
+        target: SYSTEM_OUT
+        PatternLayout:
+          pattern: "%d{yyyy-MM-dd HH:mm} {%-5level} {%t} %c.%M() %X - %msg%n"
+
+
+  loggers:
+    Root:
+      level: ${env:LOG_LEVEL:-INFO}
+      AppenderRef:
+        - ref: ${env:LOGGER_APPENDER:-consoleAppender}
+
+
+    logger:
+      - name: com.gyan.darpan.employee
+        level: ${env:LOG_LEVEL:-INFO}
+        additivity: false
+        AppenderRef:
+          - ref: ${env:LOGGER_APPENDER:-consoleAppender}
+
+      - name: org.hibernate.SQL
+        level: DEBUG
+        additivity: false
+        AppenderRef:
+          - ref: ${env:LOGGER_APPENDER:-consoleAppender}
+
