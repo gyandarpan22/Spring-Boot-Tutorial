@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: multi-data-source
+
+  datasource:
+    employee:
+      master:
+        jdbc-url: jdbc:mysql://localhost:3306/employee_service
+        username: springboottutorial
+        password: springboottutorial
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+        hikari:
+          pool-name: employee-db-connection-pool
+          minimum-idle: 3
+          maximum-pool-size: 5
+          idle-timeout: 600000
+          max-lifetime: 1800000
+          connection-timeout: 30000
+          validation-timeout: 5000
+
+      slave:
+        jdbc-url: jdbc:mysql://slave_ip/employee_service
+        username: tutorial
+        password: tutorial
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+        hikari:
+          pool-name: employee-db-connection-pool
+          minimum-idle: 3
+          maximum-pool-size: 5
+          idle-timeout: 600000
+          max-lifetime: 1800000
+          connection-timeout: 30000
+          validation-timeout: 5000
+
