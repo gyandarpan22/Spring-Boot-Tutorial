@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: dynamic-data-source
+  datasource:
+    master:
+      jdbc-url: jdbc:mysql://localhost:3306/master_db
+      username: master_db_user
+      password: master_db_user
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+      hikari:
+        pool-name: employee-db-connection-pool
+        minimum-idle: 3
+        maximum-pool-size: 5
+        idle-timeout: 600000
+        max-lifetime: 1800000
+        connection-timeout: 30000
+        validation-timeout: 5000
